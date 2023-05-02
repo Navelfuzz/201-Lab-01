@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab: Class 01</title>
+        <style>
+            h1{
+              color: powderblue;
+              background-color: maroon;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <main>
+            <h1>Class 1 Lab</h1>
+            <p style="color: pink">Question 1</p>
+            <p style="color: purple"> Question 2</p>
+            <p style="color: green"> Question 3</p>
+            <p style="color: aqua">Question 4</p>
+        </main>
+        <footer>
+            Author: Jonathon Stillson          
+        </footer>
+                  
+        <script>
+            console.log('Welcome to the RIDICULOUS font colors page.');
+            
+            let firstResponse = prompt('Whooo are uhhyyouuuuuuu?');
+            console.log(firstResponse);
+            alert('Welcome to my site ' + firstResponse + " please don't judge my lack of graphic design skill...");
+
+            let secondResponse = prompt('How old are you?');
+            console.log(secondResponse);
+
+            if(secondResponse <= 25){
+                alert('Wow, ' + firstResponse + " this isn't a daycare...");
+            } else {
+                alert('Welcome to the club ' + firstResponse + ". We have snack packs and juice boxes in the fridge ;)");
+            }
+
+            function surveyCheck(){
+                let survey = prompt('Would you like to take a brief survey? (Y/N)');
+                    if(survey == 'Y'){
+                        alert('Actually, I just noticed the time... there is no time for that right now.');
+                    } else if(survey == 'N'){
+                        alert('Would you please reconsider?');
+                        prompt('Y/N?');
+                        console.log("I don't actually care about this answer... muahhahahah");
+                        surveyCheck;
+                    }
+            }
+            
+        </script>
+    </body>
+</html>
