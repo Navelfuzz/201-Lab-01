@@ -40,17 +40,20 @@
             } else {
                 alert('Welcome to the club ' + firstResponse + ". We have snack packs and juice boxes in the fridge ;)");
             }
-
-            function surveyCheck(){
-                let survey = prompt('Would you like to take a brief survey? (Y/N)');
-                    if(survey == 'Y'){
-                        alert('Actually, I just noticed the time... there is no time for that right now.');
-                    } else if(survey == 'N'){
-                        alert('Would you please reconsider?');
-                        prompt('Y/N?');
-                        console.log("I don't actually care about this answer... muahhahahah");
-                        surveyCheck();
-                    }
+          
+                        
+            let survey = prompt('Would you like to take a brief survey? (Y/N)');
+            
+            function surveyCheck(survey){
+                if(survey == 'Y')
+                {
+                    alert("Wow I didn't realize what time it is.. There's no time for surveys, Goodbye!");
+                } else if(survey == 'N'){
+                    alert('Would you please reconsider?');
+                    prompt('Y/N?');
+                    console.log("I don't actually care muahahahaha");
+                    surveyCheck(survey);
+                }
             }
             
         </script>
