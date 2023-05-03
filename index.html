@@ -49,19 +49,13 @@
             } else if(survey == 'N'){
                 console.log(survey);
                 alert("Would you please reconsider?");
-            }
-            /*
-            function surveyCheck(survey){
-                if(survey == 'Y')
-                {
-                    alert("Wow I didn't realize what time it is.. There's no time for surveys, Goodbye!");
-                } else if(survey == 'N'){
-                    alert('Would you please reconsider?');
-                    prompt('Y/N?');
-                    console.log("I don't actually care muahahahaha");
-                    surveyCheck(survey);
+                let survey2 = prompt("What day is it? (lowercase)");
+                if(survey2 !== 'friday'){
+                    console.log(survey2)
+                    alert("I'm ready for the weekend...")
                 }
-            }*/
+            }
+            
             
         </script>
     </body>
