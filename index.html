@@ -44,7 +44,11 @@
                         
             let survey = prompt('Would you like to take a brief survey? (Y/N)');
             if(survey == 'Y'){
+                console.log(survey);
                 alert("Wow I didn't realize what time it is.. There's no time for surveys, Goodbye!");
+            } else if(survey == 'N'){
+                console.log(survey);
+                alert("Would you please reconsider?");
             }
             /*
             function surveyCheck(survey){
